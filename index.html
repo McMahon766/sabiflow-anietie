@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SabiFlow • Anietie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Splash / Header -->
+    <header>
+      <div class="logo">SabiFlow</div>
+      <p class="tagline">Voice that understands how Africans speak</p>
+    </header>
+
+    <!-- Agent Card -->
+    <div class="agent-card">
+      <div class="agent-avatar">A</div>
+      <div class="agent-info">
+        <h2>Anietie</h2>
+        <p id="agent-message">Hello, I’m Anietie. Tell me what’s going on and I’ll make sure the right team handles it.</p>
+      </div>
+    </div>
+
+    <!-- Recording Controls -->
+    <div class="controls">
+      <button id="recordBtn" class="record-btn">
+        <span id="btn-text">Start Recording</span>
+      </button>
+      <p id="status-text" class="status"></p>
+    </div>
+
+    <!-- Result Card (hidden by default) -->
+    <div id="result-card" class="result-card hidden">
+      <h3>Ticket Created</h3>
+      <div class="result-grid">
+        <div><span>Task ID</span><strong id="task-id">—</strong></div>
+        <div><span>Category</span><strong id="category">—</strong></div>
+        <div><span>Priority</span><strong id="priority">—</strong></div>
+        <div><span>Routed To</span><strong id="routed-to">—</strong></div>
+      </div>
+      <div class="transcript-box">
+        <span>Transcript</span>
+        <p id="transcript">—</p>
+      </div>
+    </div>
+
+    <!-- Recent Tasks Queue -->
+    <div id="queue-section" class="queue-section hidden">
+      <h3>Recent Tasks</h3>
+      <ul id="task-queue"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
